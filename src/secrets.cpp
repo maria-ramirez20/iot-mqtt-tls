@@ -11,7 +11,7 @@
  * furnished to do so, subject to the following conditions:
  *
  * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
+ * all c    opies or substantial portions of the Software.
  *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
@@ -46,24 +46,24 @@
 #define CITY "tulua"                              ///< Ciudad donde se encuentra el dispositivo
 #endif
 #ifndef MQTT_SERVER
-#define MQTT_SERVER "mqtt.usuario.freeddns.org"         ///< Servidor MQTT
+#define MQTT_SERVER "mqtt.mariaramirez.freeddns.org"         ///< Servidor MQTT
 #endif
 #ifndef MQTT_PORT
 #define MQTT_PORT 8883                            ///< Puerto seguro (TLS)
 #endif
 #ifndef MQTT_USER
-#define MQTT_USER "alvaro"                       ///< Usuario MQTT no adninistrador 
+#define MQTT_USER "maria"                       ///< Usuario MQTT no adninistrador 
 #endif
 #ifndef MQTT_PASSWORD
-#define MQTT_PASSWORD "supersecreto"                  ///< Contraseña del usuario MQTT
+#define MQTT_PASSWORD "maria123"                  ///< Contraseña del usuario MQTT
 #endif
 
 // Variables de configuración de la red WiFi
 #ifndef WIFI_SSID
-#define WIFI_SSID "wifi"                     ///< Cambia por el nombre de tu red WiFi
+#define WIFI_SSID "PCMAJO"                     ///< Cambia por el nombre de tu red WiFi
 #endif
 #ifndef WIFI_PASSWORD
-#define WIFI_PASSWORD "password"                       ///< Cambia por la contraseña de tu red WiFi
+#define WIFI_PASSWORD "123456788"                       ///< Cambia por la contraseña de tu red WiFi
 #endif
 
 // Alias para compatibilidad con el código existente
@@ -102,7 +102,8 @@
 "4RgqsahDYVvTH9w7jXbyLeiNdd8XM2w9U/t7y0Ff/9yi0GE44Za4rF2LN9d11TPA\n" \
 "mRGunUHBcnWEvgJBQl9nJEiU0Zsnvgc/ubhPgXRR4Xq37Z0j4r7g1SgEEzwxA57d\n" \
 "emyPxgcYxn/eR44/KJ4EBs+lVDR3veyJm+kXQ99b21/+jh5Xos1AnX5iItreGCc=\n" \
-"-----END CERTIFICATE-----"
+"-----END CERTIFICATE-----"                     ///< CA vacía por defecto; definir vía .env
+
 #endif
 
 const char* root_ca = ROOT_CA;

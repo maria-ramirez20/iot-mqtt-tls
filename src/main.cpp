@@ -43,7 +43,7 @@ void setup() {
   startWiFi("");            // Paso 5. Inicializa el servicio de WiFi
   setupIoT();               // Paso 6. Inicializa el servicio de IoT
   hora = setTime();         // Paso 7. Ajusta el tiempo del dispositivo con servidores SNTP
-  Serial.println("Firmware version v1.1.1"); // Paso 8. Imprime en el puerto serie la versión del firmware
+  Serial.println("Firmware version inicial"); // Paso 8. Imprime en el puerto serie la versión del firmware
 }
 
 // Función loop
@@ -56,5 +56,5 @@ void loop() {
     sendSensorData(data.temperature, data.humidity);             // Paso 6. Envía los datos de temperatura y humedad al servidor MQTT
   }
 
-  printf("Carga completa\n");
+
 }
